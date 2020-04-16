@@ -33,5 +33,5 @@ module.exports = async function roomDirectoryScenarios(alice, bob) {
     await receiveMessage(alice, {sender: "bob", body: bobMessage});
     const aliceMessage = "hi Bob, welcome!";
     await sendMessage(alice, aliceMessage);
-    await receiveMessage(bob, {sender: "alice", body: aliceMessage});
+    await receiveMessage(bob, {sender: "alice1", body: aliceMessage});
 };
